@@ -7,7 +7,7 @@ var request = REQUEST.defaults( {
     strictSSL: false
 });
 
-var OPENWEATHERURL = "https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/c23baf68ee1cee3c6de9b4e1ab73e654f4597ee431fe6408d0bb906e6774c976/a9f02360-4ef1-46d6-9406-430c27ac582e";
+var OPENWEATHERURL = "https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/c23baf68ee1cee3c6de9b4e1ab73e654f4597ee431fe6408d0bb906e6774c976/a9f02360-4ef1-46d6-9406-430c27ac582e?zip=";
 
 exports.getWeather = function(req, res) {
 	var zip = req.query.zip;
